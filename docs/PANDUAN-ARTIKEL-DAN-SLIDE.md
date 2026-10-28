@@ -74,25 +74,16 @@ dari repo ini.
 7. **Kesimpulan dan saran.**
 8. **Daftar pustaka** (dari `docs/LITERATUR.md`, nomor ulang sesuai urutan kemunculan di artikel).
 
-## 6. Slide progres (saran ±15 slide)
+## 6. Slide progres
 
-| # | Slide | Isi | Gambar |
-|---|---|---|---|
-| 1 | Judul | Judul, anggota, "Progres minggu 2" | |
-| 2 | Latar | Bencana, 1.678 BTS mati, WiFi ad hoc | |
-| 3 | NDN | Interest/Data, PIT, *cache* | |
-| 4 | Tantangan | Siaran tanpa ACK, serempak, storm | |
-| 5 | Rumusan masalah | 4 pertanyaan | |
-| 6 | Metode | Topologi 5 node, ndnSIM, 10 seed, 690 simulasi | diagram topologi |
-| 7 | Strategi usulan | 4 langkah jitter-broadcast | |
-| 8 | E1 | Bawaan 0%, ad hoc 17%, jeda ≈100% | `E1_terjawab.png` |
-| 9 | E2 | Dugaan *hidden terminal* terbantah; transmisi serempak | `E2_transmisi_serempak.png` |
-| 10 | E3 | Waktu tunggu 286 → 68 ms | `E3_waktu_tunggu.png` |
-| 11 | E4–E5 | Sampai 9 hop; beban tinggi | `E4_panjang_rantai.png`, `E5_beban.png` |
-| 12 | E6 | Acak 20 node: multicast 32% vs jeda ≥98%; bergerak | `E6_topologi_acak.png` |
-| 13 | E7 | Nama bersama: frame −51…65% | `E7_nama_bersama.png` |
-| 14 | Kesimpulan + batasan | 4 pesan inti, 3 batasan utama | |
-| 15 | Referensi | | |
+Presentasi progres itu santai dan singkat, jadi slidenya **sederhana**. Susunan, jumlah slide, dan desainnya
+bebas; bagian ini sengaja tidak merinci per slide. Pegangan saja:
+
+- Ceritakan **progres**, bukan seluruh penelitian: apa yang dikerjakan, apa yang ditemukan, apa berikutnya.
+- Cukup **beberapa slide**; tidak semua eksperimen perlu ditampilkan. Pilih 1–3 grafik yang paling mendukung
+  pesan inti (§1).
+- Satu slide = satu ide, teks sedikit. Detail angka dan metode biarkan di artikel.
+- Kalau sempat, sebut koreksi dugaan *hidden terminal* (§4); itu progres yang menarik.
 
 Demo langsung (opsional): `bash eksperimen/demo.sh` (±1 menit).
 
