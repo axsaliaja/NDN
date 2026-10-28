@@ -1,0 +1,5 @@
+RESULT fix=0 strategy=multicast run=1
+  PengungsiA(3hop) sent=177 ok=0 sat=0% delay=0ms
+  PengungsiB(4hop) sent=185 ok=0 sat=0% delay=0ms
+  Relawan1(1hop) sent=187 ok=187 sat=100% delay=1ms
+  SUMMARY wifiMacTx=886

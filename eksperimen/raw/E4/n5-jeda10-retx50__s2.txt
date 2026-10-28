@@ -1,0 +1,5 @@
+RESULT topo=chain n=5 spacing=80 area=300 range=100 speed=0 fix=1 strategy=jitter-broadcast jitter=10 retxSup=50 shared=0 userFreq=10 dur=20 run=2
+CONS node=1 hop=1 sent=190 ok=190 sat=100 dmean=27.778 dmed=6.92095 d95=296.51 firsttry=178 dfirst=6.53089 dretx=342.944
+CONS node=4 hop=4 sent=169 ok=169 sat=100 dmean=66.4387 dmed=28.6641 d95=358.348 firsttry=152 dfirst=27.8469 dretx=411.495
+SUM phyTx=2975 rxOk=4964 rxErr=27 phyDrop=116 rxOkN1=1101 rxErrN1=16 dropN1=58
+DROPN1 BUSY_DECODING_PREAMBLE=2 PREAMBLE_DETECT_FAILURE=2 RXING=54

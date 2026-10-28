@@ -1,0 +1,5 @@
+RESULT fix=1 strategy=self-learning run=1
+  PengungsiA(3hop) sent=133 ok=133 sat=100% delay=142.857ms
+  PengungsiB(4hop) sent=173 ok=173 sat=100% delay=44.659ms
+  Relawan1(1hop) sent=77 ok=8 sat=10.3896% delay=842ms
+  SUMMARY wifiMacTx=3986

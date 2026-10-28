@@ -1,0 +1,39 @@
+Rantai 5 node: Posko ~ Relawan1 ~ Relawan2 ~ PengungsiA ~ PengungsiB (80 m, jangkauan 100 m)
+
+$ ndn-wifi-darurat --fix=0   # face WiFi bawaan ndnSIM (point-to-point)
+   CONS node=1 hop=1 sent=187 ok=187 sat=100 dmean=1.70453 dmed=1.70453 
+   CONS node=3 hop=3 sent=177 ok=0 sat=0 dmean=0 dmed=0 
+   CONS node=4 hop=4 sent=185 ok=0 sat=0 dmean=0 dmed=0 
+   SUM phyTx=886 rxOkN1=228 dropN1=0 
+
+$ ndn-wifi-darurat --fix=1 --strategy=multicast   # face AD_HOC + multicast
+   CONS node=1 hop=1 sent=107 ok=9 sat=8.41121 dmean=3997.28 dmed=4.50723 
+   CONS node=3 hop=3 sent=168 ok=168 sat=100 dmean=31.6933 dmed=5.1946 
+   CONS node=4 hop=4 sent=169 ok=169 sat=100 dmean=52.6684 dmed=6.89914 
+   SUM phyTx=4123 rxOkN1=1180 dropN1=448 
+
+$ ndn-wifi-darurat --fix=1 --strategy=jitter-broadcast --jitter=10   # AD_HOC + jeda acak maks 10 ms (minggu 1)
+   CONS node=1 hop=1 sent=122 ok=122 sat=100 dmean=216.534 dmed=7.38453 
+   CONS node=3 hop=3 sent=110 ok=110 sat=100 dmean=286 dmed=21.9136 
+   CONS node=4 hop=4 sent=103 ok=102 sat=99.0291 dmean=438.784 dmed=28.4997 
+   SUM phyTx=2770 rxOkN1=1041 dropN1=66 
+
+$ ndn-wifi-darurat --fix=1 --strategy=jitter-broadcast --jitter=10 --retxSup=50   # + Interest ulang boleh diteruskan lagi
+   CONS node=1 hop=1 sent=165 ok=165 sat=100 dmean=46.4126 dmed=7.94453 
+   CONS node=3 hop=3 sent=161 ok=161 sat=100 dmean=65.4913 dmed=21.8406 
+   CONS node=4 hop=4 sent=154 ok=154 sat=100 dmean=108.23 dmed=28.8151 
+   SUM phyTx=4193 rxOkN1=1556 dropN1=106 
+
+E2: kenapa Relawan 1 gagal? (3 node, hanya Relawan 1 yang meminta)
+
+$ ndn-wifi-darurat --n=3 --consumers=1 --fix=1 --strategy=multicast   # Posko & Relawan 2 memancar serempak
+   CONS node=1 hop=1 sent=192 ok=0 sat=0 dmean=0 dmed=0 
+   SUM phyTx=693 rxOkN1=0 dropN1=462 
+
+$ ndn-wifi-darurat --n=3 --consumers=1 --fix=1 --strategy=multicast --range=170   # saling dengar pun tetap gagal
+   CONS node=1 hop=1 sent=192 ok=0 sat=0 dmean=0 dmed=0 
+   SUM phyTx=693 rxOkN1=0 dropN1=462 
+
+$ ndn-wifi-darurat --n=3 --consumers=1 --fix=1 --strategy=jitter-broadcast --jitter=10   # jeda acak memecah keserempakan
+   CONS node=1 hop=1 sent=162 ok=162 sat=100 dmean=73.184 dmed=6.37983 
+   SUM phyTx=739 rxOkN1=427 dropN1=36 

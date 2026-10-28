@@ -1,0 +1,4 @@
+RESULT topo=chain n=3 spacing=80 area=300 range=100 speed=0 fix=1 strategy=multicast jitter=-1 retxSup=-1 shared=0 userFreq=10 dur=20 run=4
+CONS node=1 hop=1 sent=192 ok=0 sat=0 dmean=0 dmed=0 d95=0 firsttry=0 dfirst=0 dretx=0
+SUM phyTx=687 rxOk=460 rxErr=0 phyDrop=456 rxOkN1=2 rxErrN1=0 dropN1=456
+DROPN1 BUSY_DECODING_PREAMBLE=1 PREAMBLE_DETECT_FAILURE=454 RXING=1

@@ -1,0 +1,8 @@
+RESULT topo=random n=20 spacing=80 area=300 range=100 speed=0 fix=1 strategy=jitter-broadcast jitter=10 retxSup=50 shared=1 userFreq=10 dur=20 run=6
+CONS node=10 hop=3 sent=159 ok=159 sat=100 dmean=85.6135 dmed=0 d95=17.5898 firsttry=156 dfirst=2.49019 dretx=4408.03
+CONS node=11 hop=2 sent=186 ok=186 sat=100 dmean=35.3237 dmed=0 d95=21.0272 firsttry=182 dfirst=8.78078 dretx=1243.03
+CONS node=13 hop=1 sent=155 ok=155 sat=100 dmean=75.1499 dmed=0 d95=5.87047 firsttry=154 dfirst=1.37298 dretx=11436.8
+CONS node=17 hop=2 sent=183 ok=183 sat=100 dmean=17.9261 dmed=6.78422 d95=23.6925 firsttry=179 dfirst=7.33615 dretx=491.829
+CONS node=19 hop=1 sent=84 ok=79 sat=94.0476 dmean=499.431 dmed=0 d95=5436.25 firsttry=70 dfirst=1.63649 dretx=4371.17
+SUM phyTx=8974 rxOk=23912 rxErr=730 phyDrop=15634 rxOkN1=1072 rxErrN1=47 dropN1=632
+DROPN1 BUSY_DECODING_PREAMBLE=17 PREAMBLE_DETECT_FAILURE=250 RXING=130 TXING=235

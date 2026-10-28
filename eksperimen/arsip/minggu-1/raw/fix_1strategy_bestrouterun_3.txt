@@ -1,0 +1,5 @@
+RESULT fix=1 strategy=best-route run=3
+  PengungsiA(3hop) sent=172 ok=172 sat=100% delay=42.1337ms
+  PengungsiB(4hop) sent=164 ok=164 sat=100% delay=53.6829ms
+  Relawan1(1hop) sent=94 ok=9 sat=9.57447% delay=4015ms
+  SUMMARY wifiMacTx=4151

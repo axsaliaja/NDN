@@ -1,0 +1,5 @@
+RESULT fix=1 strategy=jitter-broadcast jitter=10 run=1
+  PengungsiA(3hop) sent=111 ok=111 sat=100% delay=283.396ms
+  PengungsiB(4hop) sent=112 ok=112 sat=100% delay=365.312ms
+  Relawan1(1hop) sent=126 ok=126 sat=100% delay=196.389ms
+  SUMMARY wifiMacTx=2890

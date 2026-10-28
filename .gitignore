@@ -1,0 +1,8 @@
+# Materi kuliah dosen/asisten: tidak dipublikasikan (repo publik)
+materi-kuliah/
+# Arsip duplikat dan berkas sementara
+*.zip
+~$*
+.DS_Store
+__pycache__/
+.venv/
